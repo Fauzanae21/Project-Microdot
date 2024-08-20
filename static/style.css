@@ -1,0 +1,364 @@
+*{
+font-family: 'Helvetica', 'sans-serif';
+padding: 0;
+margin: 0;
+}
+
+/* MENGATUR TATA LETAK LOGO TUTWURI */
+.logo_tut{
+  float: left;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+/* MENGATUR TATA LETAK LOGO BBPPMPV BOE */
+.logo_vedc{
+  float: right;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+/* MENGATUR TULISAN DEPARTEMEN TEKNOLOGI INFORMASI PADA BAR ATAS WEB */
+.pos_font{
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(95, 157, 159, 0.66);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/* MENGATUR TULISAN DASHBOARD SISTEM MONITORING DAN CONTROLLING */
+.navigation{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  margin: 10px;
+}
+
+/* MENGATUR TULISAN COPYRIGHT PADA BAGIAN BAWAH WEB */
+.copy{
+text-align: center;
+font-family: Gadugi;
+margin-top: 1%;
+}
+
+/* MENGATUR FONT  TEXT STATUS */
+.gauge-card-7 h4{
+  font-size: 25px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #e1b48d;
+  font-family: "Agency FB";
+}
+
+/* MENGATUR FONT TEXT WARNING DAN SAFE KETIKA BUTTON ALARM DI TEKAN */
+.gauge-card-7 h5{
+  font-size: 20px;
+  margin-top: 8px;
+  color: rgb(255, 234, 0);
+}
+
+/* MENGATUR FONT TEXT LAMP GARDEN, LAMP TERRACE, DAN LAMP ROOM PADA CARD STATUS */
+.gauge-container .gauge-card-7 .lamp{
+  font-size: 15px;
+  text-align: start;
+  color: #e1b48d;
+}
+
+
+/* GAUGE CARD */
+.gauge-container{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(3, 1fr);
+column-gap: 5px;
+row-gap: 10px;
+min-height: 20%;
+margin-top: 10px;
+margin-right: 15px;
+margin-left: 7px;
+color: #ffffff;
+text-align: center;
+}
+
+/* MENGATUR TATA LETAK CARD TEMPERATURE */
+.gauge-card-1{
+background-color: #344966;
+grid-column: 1;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+/* MENGATUR TATA LETAK CARD HUMIDITY */
+.gauge-card-2{
+background-color: #344966;
+grid-column: 2;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* MENGATUR TATA LETAK CARD ALTITUDE */
+.gauge-card-3{
+background-color: #344966;
+grid-column: 3;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* MENGATUR TATA LETAK CARD PRESSURE */
+.gauge-card-4{
+background-color: #344966;
+grid-column: 4;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* MENGATUR TATA LETAK CARD TEMPERATURE, HUMIDITY */
+.gauge-card-5{
+background-color: #344966;
+grid-column: 1 / span 2;
+grid-row: 2 / span 2;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 90%;
+height: 89%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* MENGATUR TATA LETAK CHART PADA CARD TEMPERATURE, HUMIDITY */
+.gauge-card-5 canvas {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+/* MENGATUR TATA LETAK CARD AIR QUALITY */
+.gauge-card-6{
+background-color: #344966;
+grid-column: 5;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* MENGATUR TATA LETAK CARD STATUS */
+.gauge-card-7{
+background-color: rgba(7, 33, 82, 0.96);
+grid-column: 3;
+grid-row: 2 / span 2;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+height: 89%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* MENGATUR TATA LETAK CARD PUSH BUTTON GARDEN */
+.main-card-1{
+background-color: #344966;
+grid-column: 4;
+grid-row: 2 / span 1;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 75%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* MENGATUR TATA LETAK CARD PUSH BUTTON TERRACE */
+.main-card-2{
+background-color: #344966;
+grid-column: 5;
+grid-row: 2 / span 1;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 75%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* MENGATUR TATA LETAK CARD PUSH BUTTON ROOM */
+.main-card-3{
+background-color: #344966;
+grid-column: 4;
+grid-row: 3 / span 1;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 75%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* MENGATUR TATA LETAK CARD PUSH BUTTON ALARM */
+.main-card-4{
+background-color: #344966;
+grid-column: 5 ;
+grid-row: 3 / span 1 ;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 75%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* MENGKONTROL BUTTON ON OFF */
+.button-container{
+  display: flex;
+  background: #b6e5e6;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-row: 1 / span 1;
+  z-index: 1;
+}
+
+/* MENGATUR TEXT ON OFF */
+.button {
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 3px;
+  width: 70%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* MENGATUR BACKGROUND BUTTON ON */
+.button1 {background-color: #4CAF50;} /* Green */
+
+/* MENGATUR BACKGROUND BUTTON OFF */
+.button2 {background-color: #f44336;} /* Merah */
+
+
+/* CHART GAUGE */
+.gauge {
+  width: 100%;
+  position: relative;
+  top: -290px;
+  left: -50px;
+  max-width: 250px;
+  font-size: 35px;
+  color: #004033;
+}
+
+/* MENGATUR TATA LETAK DAN TAMPILAN BODY CHART GAUGE */
+.gauge__body {
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  background: #83afc8;
+  position: relative;
+  top: 300px;
+  left: 50px;
+  border-top-left-radius: 100% 200%;
+  border-top-right-radius: 100% 200%;
+  overflow: hidden;
+}
+
+/* MENGATUR TAMPILAN FILL CHART GAUGE */
+.gauge__fill {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  background: #cee7e8;
+  transform-origin: center top;
+  transform: rotate(0.25turn);
+  transition: transform 0.2s ease-out;
+}
+
+/* MENGATUR TAMPILAN COVER PADA CHART GAUGE */
+.gauge__cover {
+  width: 75%;
+  height: 150%;
+  background: #344966;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* MENGATUR TEXT PADA CHART GAUGE */
+  font-size: 20px; /* untuk mengatur tulisan satuan pada gauge*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25%;
+  box-sizing: border-box;
+  color: beige;
+}
+
+
+/* MENGATUR RESPONSIVE JIKA WEB DILIHAT MENGGUNAKAN DEVICE LAIN */
+@media screen and (max-width: 800px) {
+   .gauge-container {
+     text-align: center;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     display: flex;
+     width: 100%;
+     margin: auto;
+  }
+  .gauge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+
+  }
+  .navigation, .pos_font h1 {
+    text-align: center;
+  }
+
+  .gauge-card-5 {
+    position: relative;
+    height: 400px;
+    margin: auto;
+    width: 80%;
+  }
+
+  .logo_tut{
+    position: relative;
+    width:  10%;
+  }
+  .logo_vedc{
+    width: 10%;
+    position: relative;
+  }
+}
